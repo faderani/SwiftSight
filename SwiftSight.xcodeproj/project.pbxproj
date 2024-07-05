@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E52034032C4E86A600373DBF /* SwiftSightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52034022C4E86A600373DBF /* SwiftSightApp.swift */; };
+		E52034052C4E86A600373DBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52034042C4E86A600373DBF /* ContentView.swift */; };
+		E52034072C4E86A800373DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52034062C4E86A800373DBF /* Assets.xcassets */; };
+		E520340A2C4E86A800373DBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52034092C4E86A800373DBF /* Preview Assets.xcassets */; };
+		E52034222C4EA10600373DBF /* yolov8x.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E520341D2C4EA10600373DBF /* yolov8x.mlpackage */; };
+		E52034232C4EA10600373DBF /* yolov8s.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E520341E2C4EA10600373DBF /* yolov8s.mlpackage */; };
+		E52034242C4EA10600373DBF /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E520341F2C4EA10600373DBF /* yolov8n.mlpackage */; };
+		E52034252C4EA10600373DBF /* yolov8l.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E52034202C4EA10600373DBF /* yolov8l.mlpackage */; };
+		E52034262C4EA10600373DBF /* yolov8m.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E52034212C4EA10600373DBF /* yolov8m.mlpackage */; };
+		E52034282C4EA15600373DBF /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52034272C4EA15600373DBF /* CameraView.swift */; };
+		E5F739E32C56C8A8000754F9 /* ModelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F739E22C56C8A8000754F9 /* ModelSelectionView.swift */; };
+		E5F739E52C56C8C4000754F9 /* ClassSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F739E42C56C8C4000754F9 /* ClassSelectionView.swift */; };
+		E5F739E72C56C919000754F9 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F739E62C56C919000754F9 /* OverlayView.swift */; };
+		E5F739E92C56C960000754F9 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F739E82C56C960000754F9 /* VideoCapture.swift */; };
+		E5F739EB2C56C99C000754F9 /* FrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F739EA2C56C99C000754F9 /* FrameHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E52033FF2C4E86A600373DBF /* SwiftSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52034022C4E86A600373DBF /* SwiftSightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSightApp.swift; sourceTree = "<group>"; };
+		E52034042C4E86A600373DBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E52034062C4E86A800373DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E52034092C4E86A800373DBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E520341D2C4EA10600373DBF /* yolov8x.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8x.mlpackage; sourceTree = "<group>"; };
+		E520341E2C4EA10600373DBF /* yolov8s.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8s.mlpackage; sourceTree = "<group>"; };
+		E520341F2C4EA10600373DBF /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = "<group>"; };
+		E52034202C4EA10600373DBF /* yolov8l.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8l.mlpackage; sourceTree = "<group>"; };
+		E52034212C4EA10600373DBF /* yolov8m.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8m.mlpackage; sourceTree = "<group>"; };
+		E52034272C4EA15600373DBF /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		E5F739E22C56C8A8000754F9 /* ModelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSelectionView.swift; sourceTree = "<group>"; };
+		E5F739E42C56C8C4000754F9 /* ClassSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSelectionView.swift; sourceTree = "<group>"; };
+		E5F739E62C56C919000754F9 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		E5F739E82C56C960000754F9 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		E5F739EA2C56C99C000754F9 /* FrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E52033FC2C4E86A600373DBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E52033F62C4E86A500373DBF = {
+			isa = PBXGroup;
+			children = (
+				E52034012C4E86A600373DBF /* SwiftSight */,
+				E52034002C4E86A600373DBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E52034002C4E86A600373DBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E52033FF2C4E86A600373DBF /* SwiftSight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E52034012C4E86A600373DBF /* SwiftSight */ = {
+			isa = PBXGroup;
+			children = (
+				E520341C2C4EA0DD00373DBF /* Models */,
+				E52034022C4E86A600373DBF /* SwiftSightApp.swift */,
+				E52034042C4E86A600373DBF /* ContentView.swift */,
+				E5F739ED2C56C9D9000754F9 /* Helper Views */,
+				E52034062C4E86A800373DBF /* Assets.xcassets */,
+				E52034082C4E86A800373DBF /* Preview Content */,
+				E5F739EC2C56C9C9000754F9 /* Camera */,
+			);
+			path = SwiftSight;
+			sourceTree = "<group>";
+		};
+		E52034082C4E86A800373DBF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E52034092C4E86A800373DBF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E520341C2C4EA0DD00373DBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E52034202C4EA10600373DBF /* yolov8l.mlpackage */,
+				E52034212C4EA10600373DBF /* yolov8m.mlpackage */,
+				E520341F2C4EA10600373DBF /* yolov8n.mlpackage */,
+				E520341E2C4EA10600373DBF /* yolov8s.mlpackage */,
+				E520341D2C4EA10600373DBF /* yolov8x.mlpackage */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5F739EC2C56C9C9000754F9 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E52034272C4EA15600373DBF /* CameraView.swift */,
+				E5F739EA2C56C99C000754F9 /* FrameHandler.swift */,
+				E5F739E82C56C960000754F9 /* VideoCapture.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E5F739ED2C56C9D9000754F9 /* Helper Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5F739E62C56C919000754F9 /* OverlayView.swift */,
+				E5F739E22C56C8A8000754F9 /* ModelSelectionView.swift */,
+				E5F739E42C56C8C4000754F9 /* ClassSelectionView.swift */,
+			);
+			path = "Helper Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E52033FE2C4E86A600373DBF /* SwiftSight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E520340D2C4E86A800373DBF /* Build configuration list for PBXNativeTarget "SwiftSight" */;
+			buildPhases = (
+				E52033FB2C4E86A600373DBF /* Sources */,
+				E52033FC2C4E86A600373DBF /* Frameworks */,
+				E52033FD2C4E86A600373DBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSight;
+			productName = SwiftSight;
+			productReference = E52033FF2C4E86A600373DBF /* SwiftSight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E52033F72C4E86A500373DBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E52033FE2C4E86A600373DBF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = E52033FA2C4E86A500373DBF /* Build configuration list for PBXProject "SwiftSight" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E52033F62C4E86A500373DBF;
+			productRefGroup = E52034002C4E86A600373DBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E52033FE2C4E86A600373DBF /* SwiftSight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E52033FD2C4E86A600373DBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E520340A2C4E86A800373DBF /* Preview Assets.xcassets in Resources */,
+				E52034072C4E86A800373DBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E52033FB2C4E86A600373DBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F739E52C56C8C4000754F9 /* ClassSelectionView.swift in Sources */,
+				E52034282C4EA15600373DBF /* CameraView.swift in Sources */,
+				E52034232C4EA10600373DBF /* yolov8s.mlpackage in Sources */,
+				E52034242C4EA10600373DBF /* yolov8n.mlpackage in Sources */,
+				E5F739E92C56C960000754F9 /* VideoCapture.swift in Sources */,
+				E5F739E72C56C919000754F9 /* OverlayView.swift in Sources */,
+				E52034052C4E86A600373DBF /* ContentView.swift in Sources */,
+				E52034262C4EA10600373DBF /* yolov8m.mlpackage in Sources */,
+				E52034032C4E86A600373DBF /* SwiftSightApp.swift in Sources */,
+				E5F739EB2C56C99C000754F9 /* FrameHandler.swift in Sources */,
+				E52034222C4EA10600373DBF /* yolov8x.mlpackage in Sources */,
+				E52034252C4EA10600373DBF /* yolov8l.mlpackage in Sources */,
+				E5F739E32C56C8A8000754F9 /* ModelSelectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E520340B2C4E86A800373DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E520340C2C4E86A800373DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E520340E2C4E86A800373DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftSight/Preview Content\"";
+				DEVELOPMENT_TEAM = F2SW75LBZV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is needed for object detection.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soroush-shahi.SwiftSight";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E520340F2C4E86A800373DBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftSight/Preview Content\"";
+				DEVELOPMENT_TEAM = F2SW75LBZV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is needed for object detection.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soroush-shahi.SwiftSight";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E52033FA2C4E86A500373DBF /* Build configuration list for PBXProject "SwiftSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E520340B2C4E86A800373DBF /* Debug */,
+				E520340C2C4E86A800373DBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E520340D2C4E86A800373DBF /* Build configuration list for PBXNativeTarget "SwiftSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E520340E2C4E86A800373DBF /* Debug */,
+				E520340F2C4E86A800373DBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E52033F72C4E86A500373DBF /* Project object */;
+}
